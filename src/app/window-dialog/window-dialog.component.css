@@ -1,0 +1,14 @@
+app-window-dialog [kendowindowminimizeaction] {
+  visibility: hidden !important;
+}
+
+app-window-dialog .k-window-content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+app-window-dialog p,
+app-window-dialog kendo-dialog-actions {
+  flex: 1;
+}

@@ -1,0 +1,15 @@
+<div class="k-overlay" @overlayAppear></div>
+
+<kendo-window 
+  [width]="width"
+  [height]="height"
+  [minWidth]="minWidth"
+  [minHeight]="minHeight"
+  [title]="title"
+  (close)="close.emit($event)"
+  (resizeEnd)="resized.emit()"
+  (stateChange)="resized.emit()"
+  @dialogSlideInAppear
+>
+  <ng-content></ng-content>
+</kendo-window>
